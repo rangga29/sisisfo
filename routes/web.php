@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome');
 
-Route::prefix('siproblem')->group(function () {
+Route::prefix('spr-online')->group(function () {
     Route::middleware(\App\Http\Middleware\Siproblem\GuestMiddleware::class)->group(function () {
         Route::get('/login', [\App\Http\Controllers\Siproblem\AuthenticatedSessionController::class, 'login'])->name('siproblem.auth.login');
         Route::post('/login', [\App\Http\Controllers\Siproblem\AuthenticatedSessionController::class, 'authenticate'])->name('siproblem.auth.authenticate');

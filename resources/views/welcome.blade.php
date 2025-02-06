@@ -7,7 +7,7 @@
     <title>SISTEM INFORMASI SISFO</title>
 
     <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+    <link href="{{ asset('assets/Figtree-font.css') }}" rel="stylesheet" />
     <link href="{{ asset('bootstrap-5.3/css/bootstrap.min.css') }}" rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -25,7 +25,7 @@
                 <div class="col">
                     <div class="card mb-4 rounded-3 shadow-sm">
                         <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">SIPROBLEM</h4>
+                            <h4 class="my-0 fw-normal">SPR ONLINE</h4>
                         </div>
                         <div class="card-body">
                             <a href="{{ route('siproblem.home') }}" type="button" class="w-100 btn btn-lg btn-outline-primary">Masuk Website</a>

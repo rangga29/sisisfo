@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>SISTEM INFORMASI PROBLEM REPORT</title>
+    <title>SISTEM INFORMASI SYSTEM PROBLEM REPORT ONLINE</title>
 
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="{{ asset('assets/Figtree-font.css') }}" rel="stylesheet" />
@@ -42,7 +42,7 @@
             <div class="container">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                     <a href="{{ route('siproblem.home') }}" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-                        <h1>SIPROBLEM</h1>
+                        <h1>SPR ONLINE</h1>
                     </a>
 
                     <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
@@ -155,7 +155,7 @@
             problemDropdown.disabled = true;
 
             if (departmentId) {
-                fetch(`/siproblem/reports/get-problems/${departmentId}`)
+                fetch(`/spr-online/reports/get-problems/${departmentId}`)
                     .then(response => {
                         if (!response.ok) throw new Error('Network response was not ok');
                         return response.json();

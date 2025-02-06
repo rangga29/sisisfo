@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>SISTEM INFORMASI PROBLEM REPORT</title>
+    <title>SISTEM INFORMASI SYSTEM PROBLEM REPORT ONLINE</title>
 
     <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+    <link href="{{ asset('assets/Figtree-font.css') }}" rel="stylesheet" />
     <link href="{{ asset('bootstrap-5.3/css/bootstrap.min.css') }}" rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -16,7 +16,7 @@
         <form method="POST" action="{{ route('siproblem.auth.authenticate') }}">
             @csrf
             <img class="mb-4" src="{{ asset('images/logo_rsck_new_resize.png') }}" alt="" height="57">
-            <h1 class="h2 mb-3 fw-bolder text-center">SISTEM INFORMASI PROBLEM REPORT (SIPROBLEM)</h1>
+            <h1 class="h2 mb-3 fw-bolder text-center">SISTEM INFORMASI SYSTEM PROBLEM REPORT ONLINE</br> (SPR ONLINE)</h1>
 
             @if (sizeof($errors) > 0)
                 <ul class="list-group list-group-flush">
