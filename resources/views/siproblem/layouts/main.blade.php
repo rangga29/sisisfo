@@ -7,9 +7,9 @@
     <title>SISTEM INFORMASI PROBLEM REPORT</title>
 
     <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+    <link href="{{ asset('assets/Figtree-font.css') }}" rel="stylesheet" />
     <link href="{{ asset('bootstrap-5.3/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="{{ asset('assets/jquery.dataTables.min.css') }}" rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="home">
@@ -103,9 +103,9 @@
             Created by the Bootstrap team &middot; &copy; 2024
         </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="{{ asset('assets/jquery-3.6.0.min.js') }}"></script>
+    <script src="{{ asset('assets/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('assets/popper.min.js') }}"></script>
     <script src="{{ asset('bootstrap-5.3/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('ckeditor-basic/ckeditor.js') }}"></script>
     <script>
